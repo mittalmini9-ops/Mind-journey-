@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090817"><title>THE MIND JOURNEY | Games Zone</title>
+<style>
+:root{color-scheme:dark;--bg:#090817;--panel:#15132b;--line:#39345f;--cyan:#6df3ff;--pink:#ff77d8;--gold:#ffd36e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 20% 0%,#28205b 0,transparent 38%),radial-gradient(ellipse at 100% 35%,#401b51 0,transparent 35%),var(--bg);color:#fff;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;min-height:100vh}header{padding:32px 18px 18px;text-align:center}.eyebrow{letter-spacing:4px;font-size:11px;color:var(--cyan);font-weight:800}.brand{font-size:clamp(36px,10vw,66px);line-height:.95;font-weight:1000;letter-spacing:-2px;margin:14px 0;background:linear-gradient(90deg,var(--cyan),#fff,var(--pink));color:transparent;background-clip:text}.tagline{color:#c9c4e8;font-size:14px}.wrap{max-width:960px;margin:auto;padding:12px 16px 50px}.section-title{font-size:20px;margin:18px 0 14px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:linear-gradient(145deg,#1d1a3c,#111024);border:1px solid var(--line);border-radius:20px;padding:19px;box-shadow:0 12px 35px #0005}.icon{font-size:38px}.card h2{font-size:19px;margin:10px 0 6px}.card p{font-size:13px;color:#c3bfdc;line-height:1.5;min-height:40px}.play{display:block;text-align:center;text-decoration:none;font-weight:850;color:#090817;background:linear-gradient(90deg,var(--cyan),#b6faff);padding:12px;border-radius:12px;margin-top:14px}.game-area{margin-top:28px;scroll-margin-top:12px}.game-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}.game-head h2{font-size:18px;margin:0}.fs{border:1px solid #68618e;background:#252044;color:#fff;padding:9px 12px;border-radius:10px;font-weight:700}.framebox{height:75vh;min-height:520px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#100e20}.framebox iframe{width:100%;height:100%;border:0;background:#fff}footer{text-align:center;color:#9e98c5;font-size:12px;padding:28px 10px}.note{font-size:12px;color:#aaa4c9;text-align:center;margin:16px 0}
+@media(max-width:560px){header{padding-top:25px}.framebox{height:78vh;min-height:480px}.card p{min-height:0}}
+</style></head>
+<body>
+<header><div class="eyebrow">PLAY • THINK • CHALLENGE</div><div class="brand">THE MIND<br>JOURNEY</div><div class="tagline">Your little corner for big challenges ✨</div></header>
+<main class="wrap">
+<h1 class="section-title">🎮 Choose Your Game</h1>
+<section class="cards">
+<article class="card"><div class="icon">🧠</div><h2>Impossible Choices</h2><p>Quick choices, tricky situations aur apni thinking ko explore karo.</p><a class="play" href="#impossible">PLAY NOW ↘</a></article>
+<article class="card"><div class="icon">🔍</div><h2>Dhoondo Toh Jaane</h2><p>Hidden objects dhoondo, focus test karo aur score banao.</p><a class="play" href="#dhoondo">PLAY NOW ↘</a></article>
+<article class="card"><div class="icon">🏎️</div><h2>Car Racing</h2><p>Ready, set, race! Apni driving skills ko challenge karo.</p><a class="play" href="#racing">PLAY NOW ↘</a></article>
+</section>
+<p class="note">Tip: Game ko bada khelne ke liye har game ke upar Full Screen dabao.</p>
+<section class="game-area" id="impossible"><div class="game-head"><h2>🧠 Impossible Choices</h2><button class="fs" onclick="goFull('f1')">⛶ Full Screen</button></div><div class="framebox"><iframe id="f1" src="https://codepen.io/Mini-Mittal/embed/myWgPmZ?default-tab=result&theme-id=dark" loading="lazy" allow="fullscreen; gamepad" allowfullscreen></iframe></div></section>
+<section class="game-area" id="dhoondo"><div class="game-head"><h2>🔍 Dhoondo Toh Jaane</h2><button class="fs" onclick="goFull('f2')">⛶ Full Screen</button></div><div class="framebox"><iframe id="f2" src="https://codepen.io/Mini-Mittal/embed/VYpNeoG?default-tab=result&theme-id=dark" loading="lazy" allow="fullscreen; gamepad" allowfullscreen></iframe></div></section>
+<section class="game-area" id="racing"><div class="game-head"><h2>🏎️ Car Racing</h2><button class="fs" onclick="goFull('f3')">⛶ Full Screen</button></div><div class="framebox"><iframe id="f3" src="https://codepen.io/Mini-Mittal/embed/raybBNw?default-tab=result&theme-id=dark" loading="lazy" allow="fullscreen; gamepad" allowfullscreen></iframe></div></section>
+</main><footer>© THE MIND JOURNEY · Made for curious minds 💜</footer>
+<script>function goFull(id){const f=document.getElementById(id);if(f.requestFullscreen)f.requestFullscreen();else if(f.webkitRequestFullscreen)f.webkitRequestFullscreen();else alert('Full screen is not supported in this browser.');}</script>
+</body></html>
